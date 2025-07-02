@@ -47,7 +47,7 @@ const Signin = () => {
                         email: user.email,
                     });
                 }
-                router.push("/dashboard")
+                router.push("/signup")
             } else {
                 setError("Please verify your email before logging in.");
             }
