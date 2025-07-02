@@ -1,5 +1,5 @@
-// "use client"
-// import { useState } from "react";
+"use client"
+import { useState } from "react";
  import { useRouter } from "next/navigation";
 // import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 // import { auth } from "@/firebase/firebase";
