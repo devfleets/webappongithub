@@ -16,7 +16,7 @@ const Signup = () => {
     const [message, setMessage] = useState(null);
     const router = useRouter();
 
-    // const handleRegister = async (event) => {
+    const handleRegister = async (event) => {
     //     event.preventDefault();
     //     setError(null);
     //     setMessage(null);
@@ -65,7 +65,7 @@ const Signup = () => {
     //             setError("An unknown error occurred.");
     //         }
     //     }
-    // };
+     };
     return (
         <>
 
