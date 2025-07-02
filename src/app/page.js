@@ -7,10 +7,13 @@ export default function Home() {
         <header className="py-6 px-8 flex justify-between items-center">
           <h1 className="text-2xl font-bold">DevFleets</h1>
           <nav className="space-x-4">
+            <Link href="/signup" className="hover:underline">
+              Accountant</Link>
             <Link href="/signin" className="hover:underline">
               Signin</Link>
             <Link href="/signup" className="hover:underline">
               Signup</Link>
+
           </nav>
         </header>
 
@@ -19,12 +22,10 @@ export default function Home() {
           <p className="text-lg max-w-xl mb-8">
             Discover unforgettable experiences in exotic destinations. Whether you are after adventure or relaxation, Wanderly has the perfect trip.
           </p>
-          <a
-            href="#"
-            className="bg-white text-violet-600 font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-100 transition"
-          >
-            Book Your Trip
-          </a>
+         
+          <Link href="/admin" className="bg-white text-violet-600 font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-100 transition"
+        >
+            Book your trip, Dear Admin</Link>
         </main>
 
         <footer className="text-center py-10 text-sm text-white/70">
