@@ -1,8 +1,19 @@
 "use client";
 import { FaArrowLeft } from 'react-icons/fa';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function AccountantLayout({ children }) {
+    const pathname = usePathname();
+
+    const navLinks = [
+        { href: '/accountant', label: 'Home' },
+        { href: '/accountant/clients', label: 'Client Accounting' },
+        { href: '/accountant/billing', label: 'Tender & Invoices' },
+        { href: '/accountant/settings', label: 'Settings' },
+        { href: '/', label: 'Back to Site' },
+    ];
+  
     return (
         <div>
             {/* Top Nav */}
@@ -10,15 +21,17 @@ export default function AccountantLayout({ children }) {
                 <div className="flex gap-12 items-center">
                     <div className="font-bold text-xl flex items-center gap-2">
                         <div className="bg-white text-black rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold">F</div>
-                        <span>FleetPro</span>
+                        <span>DevFleets</span>
                     </div>
-                    <div className="flex gap-6 text-sm">
-                        <span className="border-b-2 border-white pb-1">
-                            <Link href={"/accountant"}>Dashboard</Link>
-                        </span>
-                        <span> <Link href={"accountant/clients"}>Client Accounting</Link> </span>
-                        <span> <Link href={"accountant/billing"}>Tender & Invoices</Link> </span>
-                    </div>
+                        <nav className="flex gap-6 text-sm">
+                            <ul className="nav-list">
+                                {navLinks.map((link) => (
+                                    <li key={link.href} className={pathname === link.href ? 'active' : ''}>
+                                        <Link href={link.href}>{link.label}</Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
                 </div>
                 <div className="flex items-center gap-3 text-sm bg-white text-black px-3 py-1 rounded-full">
                     <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center text-sm font-bold">A</div>
