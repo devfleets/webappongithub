@@ -1,6 +1,6 @@
 // "use client"
 // import { useState } from "react";
-// import { useRouter } from "next/navigation";
+ import { useRouter } from "next/navigation";
 // import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 // import { auth } from "@/firebase/firebase";
 
@@ -84,9 +84,9 @@ const Signup = () => {
                         </h2>
                     </div>
 
-                    {/*     <div className="mt-8 space-y-6">
+                    <div className="mt-8 space-y-6">
 
-                        <form className="space-y-6" onSubmit={handleRegister}>
+                        {/*     <form className="space-y-6" onSubmit={handleRegister}>
                             <div className="flex flex-col">
                                 <label htmlFor='firstName' className="text-sm font-medium text-gray-700 mb-1">
                                     First Name <span className="text-red-500 ml-1">*</span>
@@ -190,8 +190,8 @@ const Signup = () => {
                             >
                                 Sign Up {/* {isLoading ? 'Signing up...' : 'Sign up'} */}
                             {/* </button>
-                        </form>
-                    </div> */}
+                        </form> */}
+                    </div>
                 </div>
             </div>
         </>
