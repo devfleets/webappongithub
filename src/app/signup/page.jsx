@@ -11,20 +11,20 @@ const Signup = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
-
+    const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
     const [message, setMessage] = useState(null);
     const router = useRouter();
 
     const handleRegister = async (event) => {
-    //     event.preventDefault();
-    //     setError(null);
-    //     setMessage(null);
+        event.preventDefault();
+         setError(null);
+         setMessage(null);
 
-    //     if (password !== confirmPassword) {
-    //         setError("Passwords do not match.");
-    //         return;
-    //     }
+         if (password !== confirmPassword) {
+             setError("Passwords do not match.");
+             return;
+         }
     //     try {
     //         const userCredential = await createUserWithEmailAndPassword(
     //             auth,
@@ -45,17 +45,17 @@ const Signup = () => {
     //                 email,
     //             })
     //         );
-    //         setMessage(
-    //             "Registration successful. Please check your email for verification."
-    //         );
+             setMessage(
+                 "Registration successful. Please check your email for verification."
+             );
 
-    //         //clear form fields
-    //         setFirstName("");
-    //         setLastName("");
-    //         setGender("");
-    //         setEmail("");
-    //         setPassword("");
-    //         setConfirmPassword("");
+             //clear form fields
+             setFirstName("");
+             setLastName("");
+             setGender("");
+             setEmail("");
+             setPassword("");
+            setConfirmPassword("");
     //     }
     //     catch (error) {
     //         if (error instanceof Error) {
@@ -86,7 +86,7 @@ const Signup = () => {
 
                     <div className="mt-8 space-y-6">
 
-                        {/*     <form className="space-y-6" onSubmit={handleRegister}>
+                          <form className="space-y-6" onSubmit={handleRegister}>
                             <div className="flex flex-col">
                                 <label htmlFor='firstName' className="text-sm font-medium text-gray-700 mb-1">
                                     First Name <span className="text-red-500 ml-1">*</span>
@@ -188,9 +188,9 @@ const Signup = () => {
                                 // disabled={isLoading}
                                 className="w-full inline-flex items-center justify-center font-medium rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white focus:ring-blue-500 px-6 py-3 text-base shadow-lg transform hover:scale-105"
                             >
-                                Sign Up {/* {isLoading ? 'Signing up...' : 'Sign up'} */}
-                            {/* </button>
-                        </form> */}
+                                Sign Up  {isLoading ? 'Signing up...' : 'Sign up'} 
+                             </button>
+                        </form> 
                     </div>
                 </div>
             </div>
