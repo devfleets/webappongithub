@@ -1,3 +1,7 @@
+"use client";
+import { FaArrowLeft } from 'react-icons/fa';
+import Link from 'next/link';
+
 export default function AccountantLayout({ children }) {
     return (
         <div>

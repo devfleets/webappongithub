@@ -2,8 +2,7 @@
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer
 } from 'recharts';
-import { FaArrowLeft } from 'react-icons/fa';
-import Link from 'next/link';
+
 
 const data = [
   { year: '2014', value: 5 },
