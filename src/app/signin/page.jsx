@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-// import { signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 // import { auth, firestore } from "@/firebase/firebase"; // Adjust the import path as necessar
-// import { doc, getDoc, setDoc } from "firebase/firestore";
+ import { doc, getDoc, setDoc } from "firebase/firestore";
 import Link from "next/link";
 
 const Signin = () => {

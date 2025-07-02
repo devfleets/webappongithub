@@ -7,10 +7,10 @@ export default function Home() {
         <header className="py-6 px-8 flex justify-between items-center">
           <h1 className="text-2xl font-bold">DevFleets</h1>
           <nav className="space-x-4">
-            <Link href="/accountant/billing" className="hover:underline">
-              Accountant B</Link>
-            <Link href="/accountant/client" className="hover:underline">
-              Accountant C</Link>
+            <Link href="/accountant" className="hover:underline">
+              Accountant</Link>
+            <Link href="/admin" className="hover:underline">
+              Admin</Link>
             <Link href="/signin" className="hover:underline">
               Signin</Link>
             <Link href="/signup" className="hover:underline">

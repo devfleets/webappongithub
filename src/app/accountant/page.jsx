@@ -3,6 +3,7 @@ import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer
 } from 'recharts';
 import { FaArrowLeft } from 'react-icons/fa';
+import Link from 'next/link';
 
 const data = [
   { year: '2014', value: 5 },
@@ -22,9 +23,11 @@ export default function AccountantDashboard() {
             <span>FleetPro</span>
           </div>
           <div className="flex gap-6 text-sm">
-            <span className="border-b-2 border-white pb-1">Dashboard</span>
-            <span>Client Accounting</span>
-            <span>Tender & Invoices</span>
+            <span className="border-b-2 border-white pb-1">
+              <Link href={"/"}>Dashboard</Link>
+            </span>
+            <span> <Link href={"/clients"}>Client Accounting</Link> </span>
+            <span> <Link href={"/billing"}>Tender & Invoices</Link> </span>
           </div>
         </div>
         <div className="flex items-center gap-3 text-sm bg-white text-black px-3 py-1 rounded-full">
