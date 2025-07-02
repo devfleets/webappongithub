@@ -79,8 +79,8 @@ const Signin = () => {
                     </div>
 
 
-                    <div className="mt-8 space-y-6">
-                        {/* Role Selection */}
+                  <div className="mt-8 space-y-6">
+                        {/*       Role Selection
                         <div className="flex space-x-4">
                             <button
                                 type="button"
@@ -103,7 +103,7 @@ const Signin = () => {
 
                                 <span className="text-sm font-medium">Accountant</span>
                             </button>
-                        </div>
+                        </div> */}
 
 
                         <form className="space-y-6" onSubmit={handleLogin}>
