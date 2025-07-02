@@ -24,10 +24,10 @@ export default function AccountantDashboard() {
           </div>
           <div className="flex gap-6 text-sm">
             <span className="border-b-2 border-white pb-1">
-              <Link href={"/"}>Dashboard</Link>
+              <Link href={"/accountant"}>Dashboard</Link>
             </span>
-            <span> <Link href={"/clients"}>Client Accounting</Link> </span>
-            <span> <Link href={"/billing"}>Tender & Invoices</Link> </span>
+            <span> <Link href={"accountant/clients"}>Client Accounting</Link> </span>
+            <span> <Link href={"accountant/billing"}>Tender & Invoices</Link> </span>
           </div>
         </div>
         <div className="flex items-center gap-3 text-sm bg-white text-black px-3 py-1 rounded-full">
