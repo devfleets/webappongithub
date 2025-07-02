@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth, firestore } from "../../../firebase/firebase";
+import { auth, firestore } from "@/firebase/firebase"; // Adjust the import path as necessar
 import { doc, getDoc, setDoc } from "firebase/firestore";
 import Link from "next/link";
 
@@ -62,7 +62,7 @@ const Signin = () => {
     };
     return (
         <>
-            
+
 
             <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-md w-full space-y-8">
@@ -79,7 +79,7 @@ const Signin = () => {
                     </div>
 
 
-                  <div className="mt-8 space-y-6">
+                    <div className="mt-8 space-y-6">
                         {/*       Role Selection
                         <div className="flex space-x-4">
                             <button

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
-import { auth } from "../../../firebase/firebase";
+import { auth } from "@/firebase/firebase";
 
 const Signup = () => {
     const [firstName, setFirstName] = useState("");
@@ -68,9 +68,9 @@ const Signup = () => {
     };
     return (
         <>
-            
-           
-          
+
+
+
             <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-md w-full space-y-8">
                     <div>
@@ -125,7 +125,7 @@ const Signup = () => {
                                     value={gender}
                                     onChange={(e) => setGender(e.target.value)}
                                     required className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white shadow-sm"
-                                    >
+                                >
                                     <option value="">Select Gender</option>
                                     <option value="Male">Male</option>
                                     <option value="female">Female</option>
