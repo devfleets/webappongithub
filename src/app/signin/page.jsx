@@ -15,9 +15,9 @@ const Signin = () => {
     const [isLoading, setIsLoading] = useState(false);
     const router = useRouter();
 
-    // const handleLogin = async (event) => {
-    //     event.preventDefault();
-    //     setError(null);
+     const handleLogin = async (event) => {
+        event.preventDefault();
+        setError(null);
 
     //     try {
     //         const userCredential = await signInWithEmailAndPassword(
@@ -59,7 +59,7 @@ const Signin = () => {
     //             setError("An unknown error occurred");
     //         }
     //     }
-    // };
+     };
     return (
         <>
 
@@ -104,62 +104,62 @@ const Signin = () => {
                                 <span className="text-sm font-medium">Accountant</span>
                             </button>
                         </div>
-                        {/*
+                      
 
-    //                     <form className="space-y-6" onSubmit={handleLogin}>
-    //                         <div className="flex flex-col">
-    //                             <label htmlFor='email' className="text-sm font-medium text-gray-700 mb-1">
-    //                                 Email Address <span className="text-red-500 ml-1">*</span>
-    //                             </label>
-    //                             <input
-    //                                 id='email'
-    //                                 type="email"
-    //                                 value={email}
-    //                                 onChange={(e) => setEmail(e.target.value)}
-    //                                 placeholder={role === 'admin' ? 'admin@devfleets.com' : 'accountant@devfleets.com'}
-    //                                 required
-    //                                 className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white shadow-sm"
-    //                             />
-    //                         </div>
-
-
-    //                         <div className="relative flex flex-col">
-    //                             <label htmlFor='password' className="text-sm font-medium text-gray-700 mb-1">
-    //                                 Password <span className="text-red-500 ml-1">*</span>
-    //                             </label>
-    //                             <input
-    //                                 id='password'
-    //                                 type={'password'}
-    //                                 value={password}
-    //                                 onChange={(e) => setPassword(e.target.value)}
-    //                                 placeholder="Enter your password"
-    //                                 required
-    //                                 className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white shadow-sm pr-12"
-    //                             />
-    //                         </div>
+               <form className="space-y-6" onSubmit={handleLogin}>
+                           <div className="flex flex-col">
+                                 <label htmlFor='email' className="text-sm font-medium text-gray-700 mb-1">
+                                     Email Address <span className="text-red-500 ml-1">*</span>
+                                 </label>
+                                 <input
+                                     id='email'
+                                     type="email"
+                                     value={email}
+                                     onChange={(e) => setEmail(e.target.value)}
+                                    placeholder={role === 'admin' ? 'admin@devfleets.com' : 'accountant@devfleets.com'}
+                                    required
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white shadow-sm"
+                                 />
+                             </div>
 
 
-    //                         {error && (
-    //                             <div className="text-red-600 text-sm text-center bg-red-50 p-4 rounded-xl border border-red-200">
-    //                                 {error}
-    //                             </div>
-    //                         )}
+                             <div className="relative flex flex-col">
+                                 <label htmlFor='password' className="text-sm font-medium text-gray-700 mb-1">
+                                     Password <span className="text-red-500 ml-1">*</span>
+                                 </label>
+                                 <input
+                                     id='password'
+                                     type={'password'}
+                                     value={password}
+                                     onChange={(e) => setPassword(e.target.value)}
+                                     placeholder="Enter your password"
+                                     required
+                                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white shadow-sm pr-12"
+                            />
+                            </div>
 
 
-    //                         <button
-    //                             type="submit"
-    //                             disabled={isLoading}
-    //                             className="w-full inline-flex items-center justify-center font-medium rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white focus:ring-blue-500 px-6 py-3 text-base shadow-lg transform hover:scale-105"
-    //                         >
-    //                             {isLoading ? 'Signing in...' : 'Sign in'}
-    //                         </button>
+                            {error && (
+                                 <div className="text-red-600 text-sm text-center bg-red-50 p-4 rounded-xl border border-red-200">
+                                    {error}
+                                </div>
+                             )}
 
-    //                         <p>Don&apos;t, have an account?{""}
-    //                             <Link href="/signup">
-    //                                 Sign Up
-    //                             </Link>
-    //                         </p>
-    //                     </form>*/}
+
+                            <button
+                               type="submit"
+                                disabled={isLoading}
+                                className="w-full inline-flex items-center justify-center font-medium rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white focus:ring-blue-500 px-6 py-3 text-base shadow-lg transform hover:scale-105"
+                            >
+                                {isLoading ? 'Signing in...' : 'Sign in'}
+                            </button>
+
+                             <p>Don&apos;t, have an account?{""}
+                                 <Link href="/signup">
+                                     Sign Up
+                                 </Link>
+                             </p>
+                       </form>
                     </div>
                 </div>
             </div>
