@@ -61,50 +61,50 @@ const Signin = () => {
     //     }
     // };
     return (
-      <>
+        <>
 
 
             <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-                 <div className="max-w-md w-full space-y-8"> 
-                     <div>
-                       <div className="flex justify-center">
-                           <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
-                               <span className="text-white font-bold text-2xl">NM</span>
-                           </div>
-                     </div>
-                       <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                <div className="max-w-md w-full space-y-8">
+                    <div>
+                        <div className="flex justify-center">
+                            <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+                                <span className="text-white font-bold text-2xl">NM</span>
+                            </div>
+                        </div>
+                        <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
                             Sign in to DevFleets
-                       </h2>
+                        </h2>
 
                     </div>
 
 
-    {/* //                 <div className="mt-8 space-y-6"> */}
-    {/* //                     {/*       Role Selection
+                    <div className="mt-8 space-y-6">
+                        {/* Role Selection */}
                         <div className="flex space-x-4">
-    //                         <button
-    //                             type="button"
-    //                             onClick={() => setRole('admin')}
-    //                             className={`flex-1 p-4 rounded-xl border-2 transition-all duration-300 transform hover:scale-105 ${role === 'admin'
-    //                                 ? 'border-blue-500 bg-gradient-to-br from-blue-50 to-blue-100 text-blue-900 shadow-lg'
-    //                                 : 'border-gray-200 hover:border-gray-300 bg-white hover:shadow-md'
-    //                                 }`}
-    //                         >
-    //                             <span className="text-sm font-medium">Admin</span>
-    //                         </button>
-    //                         <button
-    //                             type="button"
-    //                             onClick={() => setRole('accountant')}
-    //                             className={`flex-1 p-4 rounded-xl border-2 transition-all duration-300 transform hover:scale-105 ${role === 'accountant'
-    //                                 ? 'border-blue-500 bg-gradient-to-br from-blue-50 to-blue-100 text-blue-900 shadow-lg'
-    //                                 : 'border-gray-200 hover:border-gray-300 bg-white hover:shadow-md'
-    //                                 }`}
-    //                         >
+                            <button
+                                type="button"
+                                onClick={() => setRole('admin')}
+                                className={`flex-1 p-4 rounded-xl border-2 transition-all duration-300 transform hover:scale-105 ${role === 'admin'
+                                    ? 'border-blue-500 bg-gradient-to-br from-blue-50 to-blue-100 text-blue-900 shadow-lg'
+                                    : 'border-gray-200 hover:border-gray-300 bg-white hover:shadow-md'
+                                    }`}
+                            >
+                                <span className="text-sm font-medium">Admin</span>
+                            </button>
+                            <button
+                                type="button"
+                                onClick={() => setRole('accountant')}
+                                className={`flex-1 p-4 rounded-xl border-2 transition-all duration-300 transform hover:scale-105 ${role === 'accountant'
+                                    ? 'border-blue-500 bg-gradient-to-br from-blue-50 to-blue-100 text-blue-900 shadow-lg'
+                                    : 'border-gray-200 hover:border-gray-300 bg-white hover:shadow-md'
+                                    }`}
+                            >
 
-    //                             <span className="text-sm font-medium">Accountant</span>
-    //                         </button>
-    //                     </div>
-
+                                <span className="text-sm font-medium">Accountant</span>
+                            </button>
+                        </div>
+                        {/*
 
     //                     <form className="space-y-6" onSubmit={handleLogin}>
     //                         <div className="flex flex-col">
@@ -159,11 +159,11 @@ const Signin = () => {
     //                                 Sign Up
     //                             </Link>
     //                         </p>
-    //                     </form>
-    //                 </div> */}
-                </div> 
-             </div>
-         </>
-     )
+    //                     </form>*/}
+                    </div>
+                </div>
+            </div>
+        </>
+    )
 }
 export default Signin;
