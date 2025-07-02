@@ -10,7 +10,6 @@ export default function AccountantLayout({ children }) {
         { href: '/accountant', label: 'Home' },
         { href: '/accountant/clients', label: 'Client Accounting' },
         { href: '/accountant/billing', label: 'Tender & Invoices' },
-        { href: '/accountant/settings', label: 'Settings' },
         { href: '/', label: 'Back to Site' },
     ];
   
@@ -24,13 +23,13 @@ export default function AccountantLayout({ children }) {
                         <span>DevFleets</span>
                     </div>
                         <nav className="flex gap-6 text-sm">
-                            <ul className="nav-list">
+                            <span className="border-b-2 border-white pb-1">
                                 {navLinks.map((link) => (
                                     <li key={link.href} className={pathname === link.href ? 'active' : ''}>
                                         <Link href={link.href}>{link.label}</Link>
                                     </li>
                                 ))}
-                            </ul>
+                            </span>
                         </nav>
                 </div>
                 <div className="flex items-center gap-3 text-sm bg-white text-black px-3 py-1 rounded-full">
