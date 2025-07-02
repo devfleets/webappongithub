@@ -1,78 +1,78 @@
-"use client"
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
-import { auth } from "@/firebase/firebase";
+// "use client"
+// import { useState } from "react";
+// import { useRouter } from "next/navigation";
+// import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
+// import { auth } from "@/firebase/firebase";
 
 const Signup = () => {
-    const [firstName, setFirstName] = useState("");
-    const [lastName, setLastName] = useState("");
-    const [gender, setGender] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [confirmPassword, setConfirmPassword] = useState("");
+    // const [firstName, setFirstName] = useState("");
+    // const [lastName, setLastName] = useState("");
+    // const [gender, setGender] = useState("");
+    // const [email, setEmail] = useState("");
+    // const [password, setPassword] = useState("");
+    // const [confirmPassword, setConfirmPassword] = useState("");
 
-    const [error, setError] = useState(null);
-    const [message, setMessage] = useState(null);
-    const router = useRouter();
+    // const [error, setError] = useState(null);
+    // const [message, setMessage] = useState(null);
+    // const router = useRouter();
 
-    const handleRegister = async (event) => {
-        event.preventDefault();
-        setError(null);
-        setMessage(null);
+    // const handleRegister = async (event) => {
+    //     event.preventDefault();
+    //     setError(null);
+    //     setMessage(null);
 
-        if (password !== confirmPassword) {
-            setError("Passwords do not match.");
-            return;
-        }
-        try {
-            const userCredential = await createUserWithEmailAndPassword(
-                auth,
-                email,
-                password
-            );
-            const user = userCredential.user;
+    //     if (password !== confirmPassword) {
+    //         setError("Passwords do not match.");
+    //         return;
+    //     }
+    //     try {
+    //         const userCredential = await createUserWithEmailAndPassword(
+    //             auth,
+    //             email,
+    //             password
+    //         );
+    //         const user = userCredential.user;
 
-            await sendEmailVerification(user);
+    //         await sendEmailVerification(user);
 
-            //Temporarily store user data in local storage
-            localStorage.setItem(
-                "registrationData",
-                JSON.stringify({
-                    firstName,
-                    lastName,
-                    gender,
-                    email,
-                })
-            );
-            setMessage(
-                "Registration successful. Please check your email for verification."
-            );
+    //         //Temporarily store user data in local storage
+    //         localStorage.setItem(
+    //             "registrationData",
+    //             JSON.stringify({
+    //                 firstName,
+    //                 lastName,
+    //                 gender,
+    //                 email,
+    //             })
+    //         );
+    //         setMessage(
+    //             "Registration successful. Please check your email for verification."
+    //         );
 
-            //clear form fields
-            setFirstName("");
-            setLastName("");
-            setGender("");
-            setEmail("");
-            setPassword("");
-            setConfirmPassword("");
-        }
-        catch (error) {
-            if (error instanceof Error) {
-                setError(error.message);
-            }
-            else {
-                setError("An unknown error occurred.");
-            }
-        }
-    };
+    //         //clear form fields
+    //         setFirstName("");
+    //         setLastName("");
+    //         setGender("");
+    //         setEmail("");
+    //         setPassword("");
+    //         setConfirmPassword("");
+    //     }
+    //     catch (error) {
+    //         if (error instanceof Error) {
+    //             setError(error.message);
+    //         }
+    //         else {
+    //             setError("An unknown error occurred.");
+    //         }
+    //     }
+    // };
     return (
         <>
 
 
 
             <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-md w-full space-y-8">
+                {/* <div className="max-w-md w-full space-y-8">
                     <div>
                         <div className="flex justify-center">
                             <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
@@ -189,10 +189,10 @@ const Signup = () => {
                                 className="w-full inline-flex items-center justify-center font-medium rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white focus:ring-blue-500 px-6 py-3 text-base shadow-lg transform hover:scale-105"
                             >
                                 Sign Up {/* {isLoading ? 'Signing up...' : 'Sign up'} */}
-                            </button>
+                            {/* </button>
                         </form>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     );
