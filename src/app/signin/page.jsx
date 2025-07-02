@@ -1,20 +1,19 @@
-// "use client";
+"use client";
 
-// import { useState } from "react";
-// import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 // import { signInWithEmailAndPassword } from "firebase/auth";
 // import { auth, firestore } from "@/firebase/firebase"; // Adjust the import path as necessar
 // import { doc, getDoc, setDoc } from "firebase/firestore";
-// import Link from "next/link";
+import Link from "next/link";
 
 const Signin = () => {
-    return(<h1>hi</h1>)
-    // const [email, setEmail] = useState("");
-    // const [password, setPassword] = useState("");
-    // const [role, setRole] = useState('admin');
-    // const [error, setError] = useState(null);
-    // const [isLoading, setIsLoading] = useState(false);
-    // const router = useRouter();
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [role, setRole] = useState('admin');
+    const [error, setError] = useState(null);
+    const [isLoading, setIsLoading] = useState(false);
+    const router = useRouter();
 
     // const handleLogin = async (event) => {
     //     event.preventDefault();
@@ -61,28 +60,28 @@ const Signin = () => {
     //         }
     //     }
     // };
-    // return (
-    //     <>
+    return (
+      <>
 
 
-    //         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-    //             <div className="max-w-md w-full space-y-8">
-    //                 <div>
-    //                     <div className="flex justify-center">
-    //                         <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
-    //                             <span className="text-white font-bold text-2xl">NM</span>
-    //                         </div>
-    //                     </div>
-    //                     <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-    //                         Sign in to DevFleets
-    //                     </h2>
+            <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+                 <div className="max-w-md w-full space-y-8"> 
+                     <div>
+                       <div className="flex justify-center">
+                           <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+                               <span className="text-white font-bold text-2xl">NM</span>
+                           </div>
+                     </div>
+                       <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                            Sign in to DevFleets
+                       </h2>
 
-    //                 </div>
+                    </div>
 
 
-    //                 <div className="mt-8 space-y-6">
-    //                     {/*       Role Selection
-    //                     <div className="flex space-x-4">
+    {/* //                 <div className="mt-8 space-y-6"> */}
+    {/* //                     {/*       Role Selection
+                        <div className="flex space-x-4">
     //                         <button
     //                             type="button"
     //                             onClick={() => setRole('admin')}
@@ -104,7 +103,7 @@ const Signin = () => {
 
     //                             <span className="text-sm font-medium">Accountant</span>
     //                         </button>
-    //                     </div> */}
+    //                     </div>
 
 
     //                     <form className="space-y-6" onSubmit={handleLogin}>
@@ -161,10 +160,10 @@ const Signin = () => {
     //                             </Link>
     //                         </p>
     //                     </form>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     </>
-    // )
+    //                 </div> */}
+                </div> 
+             </div>
+         </>
+     )
 }
 export default Signin;
