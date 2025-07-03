@@ -155,14 +155,15 @@ const Signin = () => {
                             <Link href="/signup">
                                 Sign Up
                             </Link>
+                            <Link href="/accountant" className="hover:underline">
+                                Accountant</Link>
+                            <Link href="/admin" className="hover:underline">
+                                Admin</Link>
                         </p>
                     </form>
                 </div>
             </div>
-            <Link href="/accountant" className="hover:underline">
-                Accountant</Link>
-            <Link href="/admin" className="hover:underline">
-                Admin</Link>
+
         </div>
         </>
     )

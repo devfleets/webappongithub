@@ -7,24 +7,6 @@ export default function AddClientDetailsPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Topbar */}
-      <div className="bg-[#0D1A2D] text-white px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <span
-            className="cursor-pointer text-sm font-semibold hover:underline"
-            onClick={() => router.back()}
-          >
-            ← Back
-          </span>
-        </div>
-        <div className="flex items-center gap-4">
-          <div className="text-sm text-right">
-            <p className="font-medium">Accountant</p>
-            <p className="text-xs text-gray-300">data</p>
-          </div>
-          <div className="w-8 h-8 rounded-full bg-gray-500" />
-        </div>
-      </div>
 
       {/* Page Title */}
       <div className="p-6">

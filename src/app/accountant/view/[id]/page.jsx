@@ -7,18 +7,6 @@ export default function ClientViewPage() {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* Top Bar */}
-      <div className="bg-[#0E1F51] text-white p-4 flex justify-between items-center">
-        <button onClick={() => router.back()} className="text-sm">&larr; Back</button>
-        <div className="flex items-center gap-2">
-          <div className="text-sm text-right">
-            <div>Accountant</div>
-            <div className="text-xs text-gray-300">data</div>
-          </div>
-          <div className="bg-white rounded-full w-10 h-10" />
-        </div>
-      </div>
-
       <div className="p-6 space-y-6">
 
         {/* Header Section */}
@@ -27,7 +15,7 @@ export default function ClientViewPage() {
           <div className="bg-white p-4 rounded shadow col-span-1">
             <h2 className="font-semibold text-sm mb-2 text-[#0E1F51]">🏢 Company Information</h2>
             <div className="text-sm space-y-1">
-              <p>Contact Person: John Smith</p>
+              <p>Contact Person: Aviraj Mahadik</p>
               <p>Email: john@abccorp.com</p>
               <p>Phone: +91-9876543210</p>
               <p>Address: 123 Business Park, Mumbai</p>

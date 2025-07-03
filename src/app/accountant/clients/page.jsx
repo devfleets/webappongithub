@@ -5,11 +5,11 @@ import { useRouter } from 'next/navigation';
 export default function AccountantClientsPage() {
   const router = useRouter();
   const clients = Array(6).fill({
-    name: 'ABC Corporation',
-    person: 'John Smith',
-    email: 'john@abccorp.com',
+    name: 'Pune Municipal Corporation',
+    person: 'Aviraj Patil',
+    email: 'aviraj@pmc.org.in',
     phone: '+91-9876543210',
-    address: '123 Business Park, Mumbai, Maharashtra 400001',
+    address: '123 Business Park, Pune, Maharashtra 400001',
     vehicles: 45,
     status: 'Active',
   });
@@ -28,11 +28,11 @@ export default function AccountantClientsPage() {
             className="border rounded-md px-4 py-2 w-full max-w-md"
           />
           <button
-  onClick={() => router.push('/accountant/clients/add')}
-  className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm"
->
-  + Details
-</button>
+            onClick={() => router.push('/accountant/clients/add')}
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm"
+          >
+            + Details
+          </button>
 
         </div>
 
@@ -69,12 +69,12 @@ export default function AccountantClientsPage() {
 
               <div className="flex justify-between mt-4">
                 <button
-        onClick={() => router.push('/accountant/view/abc')}
-        className="text-sm px-4 py-2 bg-blue-100 rounded"
-      >
-        View
-      </button>
-                <button className="flex items-center gap-1 px-4 py-1 bg-gray-100 rounded-full text-black text-sm"  onClick={() => router.push('/accountant/clients/edit')}>
+                  onClick={() => router.push('/accountant/view/abc')}
+                  className="text-sm px-4 py-2 bg-blue-100 rounded"
+                >
+                  View
+                </button>
+                <button className="flex items-center gap-1 px-4 py-1 bg-gray-100 rounded-full text-black text-sm" onClick={() => router.push('/accountant/clients/edit')}>
                   <FaEdit /> Edit
                 </button>
               </div>

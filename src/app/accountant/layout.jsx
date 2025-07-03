@@ -10,7 +10,6 @@ export default function AccountantLayout({ children }) {
         { href: '/accountant', label: 'Home' },
         { href: '/accountant/clients', label: 'Client Accounting' },
         { href: '/accountant/billing', label: 'Tender & Invoices' },
-        { href: '/', label: 'Back to Site' },
     ];
   
     return (
@@ -20,7 +19,7 @@ export default function AccountantLayout({ children }) {
                 <div className="flex gap-12 items-center">
                     <div className="font-bold text-xl flex items-center gap-2">
                         <div className="bg-white text-black rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold">F</div>
-                        <span>DevFleets</span>
+                        <span><Link href={'/'}>DevFleets</Link></span>
                     </div>
                         <nav className="flex gap-6 text-sm">
                                 {navLinks.map((link) => (

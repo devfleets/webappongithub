@@ -20,12 +20,6 @@ export default function AboutPage() {
                             We're more than a travel company — we're your companions on the road to discovery.
                         </p>
                     </div>
-
-                    <img
-                        src="/images/about-travel.jpg" // Make sure this image exists in public/images
-                        alt="Traveling the world"
-                        className="rounded-2xl shadow-md w-full h-auto object-cover"
-                    />
                 </div>
 
                 <div className="mt-16 text-center">
