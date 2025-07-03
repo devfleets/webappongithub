@@ -1,20 +1,17 @@
 'use client';
-// import Sidebar from '@/components/Sidebar';
-// import { useState } from 'react';
-// import { XMarkIcon, ExclamationTriangleIcon, DocumentTextIcon } from '@heroicons/react/24/outline';
+import { useState } from 'react';
+ import { XMarkIcon, ExclamationTriangleIcon, DocumentTextIcon } from '@heroicons/react/24/outline';
 
 export default function AlertsPage() {
-//   const [typeFilter, setTypeFilter] = useState('All Types');
+  const [typeFilter, setTypeFilter] = useState('All Types');
 
   return (
     <div className="flex min-h-screen">
-      {/* Sidebar
-      <Sidebar /> */}
 
       {/* Main Content */}
-      {/* <div className="flex-1 bg-gray-50 p-6"> */}
+       <div className="flex-1 bg-gray-50 p-6"> 
         {/* Header */}
-        {/* <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center justify-between mb-4">
           <div>
             <h1 className="text-2xl font-bold text-gray-800">Alerts & Notification</h1>
             <p className="text-gray-500 text-sm mt-1">Stay updated with important fleet notifications and alerts</p>
@@ -23,10 +20,10 @@ export default function AlertsPage() {
             <button className="px-4 py-1.5 border border-gray-300 rounded-md text-sm text-gray-700">Mark All Read</button>
             <span className="bg-blue-100 text-blue-600 text-sm font-medium px-3 py-1 rounded-full">2 Unread</span>
           </div>
-        </div> */}
+        </div> 
 
         {/* Search & Filter */}
-        {/* <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between mb-6">
           <input
             type="text"
             placeholder="search client........"
@@ -48,12 +45,12 @@ export default function AlertsPage() {
               <option>Loss</option>
             </select>
           </div>
-        </div> */}
+        </div> 
 
         {/* Alert Cards */}
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4"> */}
+       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Insurance Expiring Cards */}
-          {/* {[1, 2].map((_, index) => (
+           {[1, 2].map((_, index) => (
             <div
               key={index}
               className="border border-red-300 bg-white rounded-md p-4 relative shadow-sm flex flex-col gap-2"
@@ -78,13 +75,13 @@ export default function AlertsPage() {
               </button>
             </div>
           ))}
-        </div> */}
+        </div> 
 
         {/* Combined Card: Loss & Expense */}
-        {/* <div className="mt-6 bg-white border rounded-md p-4 shadow-sm">
+         <div className="mt-6 bg-white border rounded-md p-4 shadow-sm">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Loss due to Vehicles */}
-            {/* <div> 
+             <div> 
               <div className="flex items-center gap-2 mb-2">
                 <ExclamationTriangleIcon className="h-5 w-5 text-red-500" />
                 <h2 className="font-semibold text-sm text-red-600">Loss due to Vehicles</h2>
@@ -97,10 +94,10 @@ export default function AlertsPage() {
                 <p className="font-bold">Total Loss <span className="float-right font-bold">₹12,500</span></p>
                 <p>Loss Percentage <span className="float-right font-medium">27.5%</span></p>
               </div>
-            </div> */}
+            </div> 
 
             {/* Expense Breakdown */}
-            {/* <div>
+             <div>
               <div className="flex justify-between mb-2">
                 <h2 className="font-semibold text-sm">Expense Breakdown</h2>
                 <XMarkIcon className="h-4 w-4 text-gray-400 cursor-pointer" />
@@ -119,7 +116,7 @@ export default function AlertsPage() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div> 
     </div>
   );
 }

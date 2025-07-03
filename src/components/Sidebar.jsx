@@ -20,6 +20,13 @@ const menuItems = [
   { name: 'Reports', icon: <FaChartBar /> },
 ];
 
+
+// const navLinks = [
+//   { href: '/accountant', label: 'Home' },
+//   { href: '/accountant/clients', label: 'Client Accounting' },
+//   { href: '/accountant/billing', label: 'Tender & Invoices' },
+// ];
+
 export default function Sidebar() {
   return (
     <aside className="w-64 bg-[#0F172A] text-white min-h-screen flex flex-col">
