@@ -4,8 +4,9 @@ export default function AdminLayout({ children }) {
 
     return (
         <div>
-            <Sidebar />
+            <Sidebar>
             <main>{children}</main>
+            </Sidebar>
         </div>
     );
 }

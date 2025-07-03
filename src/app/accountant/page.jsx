@@ -4,10 +4,10 @@ import {
 } from 'recharts';
 
 const data = [
-  { year: '2014', value: 5 },
-  { year: '2015', value: 20 },
-  { year: '2016', value: 100 },
-  { year: '2017', value: 75 }
+  { year: '2022', value: 5 },
+  { year: '2023', value: 20 },
+  { year: '2024', value: 75 },
+  { year: '2025', value: 90 }
 ];
 
 export default function AccountantDashboard() {
@@ -36,7 +36,7 @@ export default function AccountantDashboard() {
       <div className="grid grid-cols-2 gap-6 px-6 pb-10">
         {/* Bar Chart */}
         <div className="bg-white p-4 rounded-xl shadow border">
-          <h2 className="font-semibold text-sm mb-4">Outstanding Purchase Invoices</h2>
+          <h2 className="font-semibold text-sm mb-4">Profit by year</h2>
           <ResponsiveContainer width="100%" height={250}>
             <BarChart data={data}>
               <XAxis dataKey="year" />
