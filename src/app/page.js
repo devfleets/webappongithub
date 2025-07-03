@@ -8,14 +8,10 @@ export default function Home() {
           <h1 className="text-2xl font-bold">DevFleets</h1>
           <nav className="space-x-4">
 
-            <Link href="/accountant" className="hover:underline">
-              Accountant</Link>
-            <Link href="/admin" className="hover:underline">
-              Admin</Link>
+            <Link href="/about" className="hover:underline">
+              About Us</Link>
             <Link href="/signin" className="hover:underline">
               Signin</Link>
-            <Link href="/signup" className="hover:underline">
-              Signup</Link>
           </nav>
         </header>
 

@@ -23,13 +23,11 @@ export default function AccountantLayout({ children }) {
                         <span>DevFleets</span>
                     </div>
                         <nav className="flex gap-6 text-sm">
-                            <span className="border-b-2 border-white pb-1">
                                 {navLinks.map((link) => (
-                                    <li key={link.href} className={pathname === link.href ? 'active' : ''}>
+                                    <span className="border-b-2 border-white pb-1 pathname === link.href ? 'active' : ''" key={link.href} >
                                         <Link href={link.href}>{link.label}</Link>
-                                    </li>
+                                    </span>
                                 ))}
-                            </span>
                         </nav>
                 </div>
                 <div className="flex items-center gap-3 text-sm bg-white text-black px-3 py-1 rounded-full">
