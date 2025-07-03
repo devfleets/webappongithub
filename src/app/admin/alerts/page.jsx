@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
- import { XMarkIcon, ExclamationTriangleIcon, DocumentTextIcon } from '@heroicons/react/24/outline';
+//  import { XMarkIcon, ExclamationTriangleIcon, DocumentTextIcon } from '@heroicons/react/24/outline';
 
 export default function AlertsPage() {
   const [typeFilter, setTypeFilter] = useState('All Types');
@@ -57,12 +57,12 @@ export default function AlertsPage() {
             >
               <div className="flex justify-between">
                 <div className="flex gap-2 items-center">
-                  <DocumentTextIcon className="h-5 w-5 text-red-500" />
+                  {/* <DocumentTextIcon className="h-5 w-5 text-red-500" /> */}
                   <h2 className="font-semibold text-red-600 text-sm">Insurance Expiring</h2>
                 </div>
                 <div className="flex items-center gap-3">
                   <button className="text-blue-600 text-xs">Mark Read</button>
-                  <XMarkIcon className="h-4 w-4 text-gray-400 cursor-pointer" />
+                  {/* <XMarkIcon className="h-4 w-4 text-gray-400 cursor-pointer" /> */}
                 </div>
               </div>
               <div className="text-sm">
@@ -83,7 +83,7 @@ export default function AlertsPage() {
             {/* Loss due to Vehicles */}
              <div> 
               <div className="flex items-center gap-2 mb-2">
-                <ExclamationTriangleIcon className="h-5 w-5 text-red-500" />
+                {/* <ExclamationTriangleIcon className="h-5 w-5 text-red-500" /> */}
                 <h2 className="font-semibold text-sm text-red-600">Loss due to Vehicles</h2>
               </div>
               <div className="text-sm">
@@ -100,7 +100,7 @@ export default function AlertsPage() {
              <div>
               <div className="flex justify-between mb-2">
                 <h2 className="font-semibold text-sm">Expense Breakdown</h2>
-                <XMarkIcon className="h-4 w-4 text-gray-400 cursor-pointer" />
+                {/* <XMarkIcon className="h-4 w-4 text-gray-400 cursor-pointer" /> */}
               </div>
               <div className="text-sm space-y-1">
                 <p>Cng: <span className="float-right font-medium">₹20,000</span></p>
